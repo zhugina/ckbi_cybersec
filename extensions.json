@@ -2,6 +2,7 @@
   "comment": "В этом файле собраны рекомендуемые плагины для vscode для кул хацкера",
   "recommendations": [
     "dbaeumer.vscode-eslint", 
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "ms-vscode-remote.remote-ssh-edit"
   ]
 }
