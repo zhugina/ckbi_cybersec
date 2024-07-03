@@ -3,6 +3,7 @@
   "recommendations": [
     "dbaeumer.vscode-eslint", 
     "esbenp.prettier-vscode",
+    "ms-vscode-remote.remote-ssh",
     "ms-vscode-remote.remote-ssh-edit"
   ]
 }
