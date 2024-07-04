@@ -36,3 +36,7 @@ user=$(whoami) # Выполнили команду whoami и записали р
 echo "Текущая директория: $directory" # Читаем из переменной
 echo "Текущий пользователь: $user"
 ```
+
+## Ссылки на материалы
+
+- https://habr.com/ru/companies/ruvds/articles/325522/
