@@ -6,3 +6,4 @@
 ## Contributors
 
 [![Static Badge](https://img.shields.io/badge/kadoxti-black?style=for-the-badge&logo=github&labelColor=blue)](https://github.com/kadoxti)
+[![Static Badge](https://img.shields.io/badge/Prymak-black?style=for-the-badge&logo=github&labelColor=violet)](https://github.com/Prymak-D-A)
