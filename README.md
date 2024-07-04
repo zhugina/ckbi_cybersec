@@ -6,3 +6,4 @@
 ## Contributors
 
 [![Static Badge](https://img.shields.io/badge/kadoxti-black?style=for-the-badge&logo=github&labelColor=blue)](https://github.com/kadoxti)
+[![Static Badge](https://img.shields.io/badge/PocketFreddie-black?style=for-the-badge&logo=github&labelColor=yellow)](https://github.com/PocketFreddie)
