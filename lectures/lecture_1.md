@@ -69,10 +69,8 @@ done
 Итоговый скрипт:
 
 ```bash
-echo "Создаю папки"
-for ((i=0;i<100;i++))
-do
-mkdir ./dir$i
+for i in {0..99..1}; do # Итерирование по диапазону от 0 до 99 с шагом 1
+  mkdir ./dir$i
 done
 
 for dir in ./*
