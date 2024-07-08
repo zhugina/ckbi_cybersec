@@ -29,4 +29,8 @@ r-x = 101 = 5
 r-- = 100 = 4
 ```
 
+## SUID, GUID, sticky bit
+
+Помимо
+
 ## Утилита touch
