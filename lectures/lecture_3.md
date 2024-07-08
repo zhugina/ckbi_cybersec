@@ -39,6 +39,9 @@ r-- = 100 = 4
 ## Другое
 
 `find / -user linda` - вывод всех файлов, для которых linda владелец
+`find / -group users`
+
+`chown -R linda /home/account` - смена владельца для папки и всего содержимого
 
 ## Утилита touch
 
