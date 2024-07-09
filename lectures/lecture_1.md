@@ -48,25 +48,26 @@ echo "Домашняя папка: $HOME" # Выводим путь домашн
 for group in xackers sheeps dogs ; do
   addgroup $group
 done
-cat /etc/group # Выведем все группы пользователей в системе
 
 # Создадим 100 пользователей и распределим их по группам
-for ((i=0;i<100;i++)) ; do
-  if [[ $i%3 -eq 0 ]] ; then
-    adduser user_$i -G xackers
-  elif [[ $i%3 -eq 0 ]] ; then
-    adduser user_$i -G sheeps
+for i in $(seq 1 1 100) ; do
+  if [[ $i -le 33 ]] ; then
+    adduser user_$i -G xackers -D # Создаем пользователя и добавляем его в группу xackers и просим не требовать пароль
+  elif [[ $i -le 66 ]] ; then
+    adduser user_$i -G sheeps -D
   else
-    adduser user_$i -G dogs
+    adduser user_$i -G dogs -D
   fi
 done
+
+cat /etc/passwd # Выведем всех пользователей в системе
 ```
 
 Еще один пример:
 
 ```bash
 # Создадим 100 директорий
-for i in {0..99..1}; do # Итерирование по диапазону от 0 до 99 с шагом 1
+for i in {0..99..1}; do # Итерирование по диапазону от 0 до 99 с шагом 1 (Не везде работает)
   mkdir ./dir$i
 done
 
