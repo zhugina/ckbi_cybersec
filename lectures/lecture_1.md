@@ -143,3 +143,4 @@ fi
 
 - https://habr.com/ru/companies/ruvds/articles/325522/
 - https://www.geeksforgeeks.org/bash-scripting-if-statement/
+- https://devhints.io/bash
