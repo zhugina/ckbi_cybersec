@@ -1,5 +1,6 @@
 {
   "recommendations": [
+    "timonwong.shellcheck",
     "dbaeumer.vscode-eslint", 
     "esbenp.prettier-vscode",
     "ms-vscode-remote.remote-ssh",
