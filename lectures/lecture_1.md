@@ -142,7 +142,7 @@ fi
 #! /bin/bash
 echo "arg count: $#" # Вывод количества аргументов
 for i in $@ ; do # $@ выдает все аргументы как отдельные строки
-echo "arg: $i"
+  echo "arg: $i"
 done
 
 echo "Shell: $0, first arg: $1, third arg: $3"
