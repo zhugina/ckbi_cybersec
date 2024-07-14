@@ -46,17 +46,17 @@ echo "Домашняя папка: $HOME" # Выводим путь домашн
 ```bash
 # Создадим 3 группы пользователей
 for group in xackers sheeps dogs ; do
-  addgroup $group
+  groupadd $group
 done
 
 # Создадим 100 пользователей и распределим их по группам
 for i in $(seq 1 1 100) ; do
   if [[ $i -le 33 ]] ; then
-    adduser user_$i -G xackers -D # Создаем пользователя и добавляем его в группу xackers и просим не требовать пароль
+    useradd user_$i -g xackers # Создаем пользователя и добавляем его в группу xackers
   elif [[ $i -le 66 ]] ; then
-    adduser user_$i -G sheeps -D
+    useradd user_$i -g sheeps
   else
-    adduser user_$i -G dogs -D
+    useradd user_$i -g dogs
   fi
 done
 
@@ -137,6 +137,16 @@ fi
 ## Функции
 
 ## Аргументы
+
+```bash
+#! /bin/bash
+echo "arg count: $#" # Вывод количества аргументов
+for i in $@ ; do # $@ выдает все аргументы как отдельные строки
+echo "arg: $i"
+done
+
+echo "Shell: $0, first arg: $1, third arg: $3"
+```
 
 ## Ссылки на материалы
 
