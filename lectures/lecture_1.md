@@ -145,7 +145,8 @@ for i in $@ ; do # $@ выдает все аргументы как отдель
   echo "arg: $i"
 done
 
-echo "Shell: $0, first arg: $1, third arg: $3"
+echo "script file: $0" # Вывод месторасположения файла скрипта
+echo "first arg: $1, third arg: $3" # Вывод 1го и 3го аргумента
 ```
 
 ## Ссылки на материалы
