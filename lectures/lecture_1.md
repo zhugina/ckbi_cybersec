@@ -3,10 +3,10 @@
 ## Содержание
 
 - Bash-скрипт
-- Циклы
 - Условия
-- Функции
+- Циклы
 - Аргументы
+- Функции
 - Ссылки на материалы
 
 ## Bash скрипт
@@ -39,48 +39,6 @@ user=$(whoami) # Выполнили команду whoami и записали р
 echo "Текущая директория: $directory" # Читаем из переменной
 echo "Текущий пользователь: $user"
 echo "Домашняя папка: $HOME" # Выводим путь домашней директории из переменной окружения
-```
-
-## Циклы
-
-```bash
-# Создадим 3 группы пользователей
-for group in xackers sheeps dogs ; do
-  groupadd $group
-done
-
-# Создадим 100 пользователей и распределим их по группам
-for i in $(seq 1 1 100) ; do
-  if [[ $i -le 33 ]] ; then
-    useradd user_$i -g xackers # Создаем пользователя и добавляем его в группу xackers
-  elif [[ $i -le 66 ]] ; then
-    useradd user_$i -g sheeps
-  else
-    useradd user_$i -g dogs
-  fi
-done
-
-cat /etc/passwd # Выведем всех пользователей в системе
-```
-
-Еще один пример:
-
-```bash
-# Создадим 100 директорий
-for i in {0..99..1}; do # Итерирование по диапазону от 0 до 99 с шагом 1 (Не везде работает)
-  mkdir ./dir$i
-done
-
-# В каждой директории создадим по 3 файла
-for dir in ./*
-do
-  for name in readme.md license passwords.txt
-  do
-  touch $dir/$name
-  done 
-done
-
-ls -Rp
 ```
 
 ## Условия
@@ -134,7 +92,47 @@ fi
 
 `[[ ]]` - наиболее современный вариант, вместо `[ ]`
 
-## Функции
+## Циклы
+
+```bash
+# Создадим 3 группы пользователей
+for group in xackers sheeps dogs ; do
+  groupadd $group
+done
+
+# Создадим 100 пользователей и распределим их по группам
+for i in $(seq 1 1 100) ; do
+  if [[ $i -le 33 ]] ; then
+    useradd user_$i -g xackers # Создаем пользователя и добавляем его в группу xackers
+  elif [[ $i -le 66 ]] ; then
+    useradd user_$i -g sheeps
+  else
+    useradd user_$i -g dogs
+  fi
+done
+
+cat /etc/passwd # Выведем всех пользователей в системе
+```
+
+Еще один пример:
+
+```bash
+# Создадим 100 директорий
+for i in {0..99..1}; do # Итерирование по диапазону от 0 до 99 с шагом 1 (Не везде работает)
+  mkdir ./dir$i
+done
+
+# В каждой директории создадим по 3 файла
+for dir in ./*
+do
+  for name in readme.md license passwords.txt
+  do
+  touch $dir/$name
+  done 
+done
+
+ls -Rp
+```
 
 ## Аргументы
 
@@ -147,6 +145,16 @@ done
 
 echo "script file: $0" # Вывод месторасположения файла скрипта
 echo "first arg: $1, third arg: $3" # Вывод 1го и 3го аргумента
+```
+
+## Функции
+
+```bash
+myfunc() {
+    echo "hello $1"
+}
+
+myfunc Xacker # Получим вывод hello Xacker
 ```
 
 ## Ссылки на материалы
