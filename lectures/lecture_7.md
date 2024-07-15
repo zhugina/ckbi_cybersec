@@ -6,3 +6,5 @@
 - сменить пароль
 - задать правила паролей
 - подмена  хэшей
+
+useradd, groupadd, userdel, passwd, usermod
