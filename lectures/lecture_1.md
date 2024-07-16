@@ -83,10 +83,23 @@ i=10
 s="qwerty"
 if [ $i -eq 0 ] ; then
   echo "i is zero"
-elif [ $i -gt 0 ] and [ -n $s ] ; then
-  echo "i is >= 0 and s is not zero length"
+elif [ $i -gt 0 && -n $s ] ; then
+  echo "i is > 0 and s is not zero length"
 else
-  echo "i is = 0 or s is zero length"
+  echo "s is zero length"
+fi
+```
+
+Для работы с числами можно использовать подход с утилитой `expr`:
+```bash
+#! /bin/bash
+i=10
+if [ $(expr $i==0) ] ; then
+  echo "i is zero"
+elif [ $(expr $i>0) && -n $s ] ; then
+  echo "i is > 0 and s is not zero length"
+else
+  echo "s is zero length"
 fi
 ```
 
@@ -95,6 +108,7 @@ fi
 ## Циклы
 
 ```bash
+#! /bin/bash
 # Создадим 3 группы пользователей
 for group in xackers sheeps dogs ; do
   groupadd $group
@@ -117,11 +131,7 @@ cat /etc/passwd # Выведем всех пользователей в сист
 Еще один пример:
 
 ```bash
-# Создадим 100 директорий
-for i in {0..99..1}; do # Итерирование по диапазону от 0 до 99 с шагом 1 (Не везде работает)
-  mkdir ./dir$i
-done
-
+#! /bin/bash
 # В каждой директории создадим по 3 файла
 for dir in ./*
 do
@@ -150,6 +160,7 @@ echo "first arg: $1, third arg: $3" # Вывод 1го и 3го аргумент
 ## Функции
 
 ```bash
+#! /bin/bash
 myfunc() {
     echo "hello $1"
 }
