@@ -90,13 +90,13 @@ else
 fi
 ```
 
-Для работы с числами можно использовать подход с утилитой `expr`:
+Для работы с числами можно использовать другой подход:
 ```bash
 #! /bin/bash
 i=10
-if [ $(expr $i==0) ] ; then
+if (( $i == 0 )) ; then
   echo "i is zero"
-elif [ $(expr $i>0) && -n $s ] ; then
+elif (( $i > 0 )) && [ -n $s ] ; then
   echo "i is > 0 and s is not zero length"
 else
   echo "s is zero length"
