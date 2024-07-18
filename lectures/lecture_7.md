@@ -7,4 +7,4 @@
 - задать правила паролей
 - подмена  хэшей
 
-useradd, groupadd, userdel, passwd, usermod
+useradd, groupadd, userdel, passwd, usermod, chage, id, who, whoami
