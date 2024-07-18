@@ -112,7 +112,7 @@ i=10
 s="qwerty"
 if test $i -eq 0 ; then
   echo "i is zero"
-elif test $i -gt 0 && -n $s ; then
+elif test $i -gt 0 && test -n $s ; then
   echo "i is > 0 and s is not zero length"
 else
   echo "s is zero length"
