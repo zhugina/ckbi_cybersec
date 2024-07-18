@@ -103,7 +103,21 @@ else
 fi
 ```
 
-`[[ ]]` - наиболее современный вариант, вместо `[ ]`
+`[[ ]]` - наиболее современный вариант, вместо `[ ]`.
+
+`if` на самом деле работает с командами, и `[` - такая же обычная команда, аналог команды `test`. `if [ expression ]` является на самом деле `if test expression`:
+```bash
+#! /bin/bash
+i=10
+s="qwerty"
+if test $i -eq 0 ; then
+  echo "i is zero"
+elif test $i -gt 0 && -n $s ; then
+  echo "i is > 0 and s is not zero length"
+else
+  echo "s is zero length"
+fi
+```
 
 ## Циклы
 
