@@ -28,6 +28,7 @@
 - [развернутые виртуалки](https://www.osboxes.org/virtualbox-images)
 - [CTF](https://overthewire.org/wargames/)
 - [тгк компетенции "Информационная безопасность"](https://t.me/cybersec_atom)
+- [Полное руководство по bash](https://tldp.org/LDP/abs/html/)
 
 ## Contributors
 
