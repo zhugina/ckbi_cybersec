@@ -6,8 +6,8 @@
 
 | Участник | Баллы |
 | -------- | ----- |
+| [PocketFreddie](https://github.com/PocketFreddie) | 8,5 |
 | [Prymak-D-A](https://github.com/Prymak-D-A) | 7 |
-| [PocketFreddie](https://github.com/PocketFreddie) | 7 |
 | [BYAKISHMAN](https://github.com/byakishman) | 3 |
 
 ### Правила начисления баллов
