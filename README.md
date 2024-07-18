@@ -1,8 +1,9 @@
 # ckbi_cybersec
 
-- **lectures** - лекции в рамках секции "Кибербезопасность"
-- **.vscode/extensions.json** - рекомендуемые плагины для vscode
-- **championships.md** - таблицы чемпионатов
+- **[lectures](/lectures)** - лекции в рамках секции "Кибербезопасность"
+- **[printable](/printable)** - лекции в рамках секции "Кибербезопасность"
+- **[.vscode/extensions.json](/.vscode/extensions.json)** - рекомендуемые плагины для vscode
+- **[championships.md](./championships.md)** - таблицы чемпионатов
 
 ## Направления секции
 
