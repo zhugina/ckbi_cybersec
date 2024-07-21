@@ -37,3 +37,4 @@
 [![Static Badge](https://img.shields.io/badge/Prymak-black?style=for-the-badge&logo=github&labelColor=violet)](https://github.com/Prymak-D-A)
 [![Static Badge](https://img.shields.io/badge/PocketFreddie-black?style=for-the-badge&logo=bruno&logoColor=black&labelColor=yellow)](https://github.com/PocketFreddie)
 [![Static Badge](https://img.shields.io/badge/byakishman-black?style=for-the-badge&logo=bruno&logoColor=black&labelColor=indigo)](https://github.com/byakishman)
+[![Static Badge](https://img.shields.io/badge/valueromel-black?style=for-the-badge&logo=ko-fi&logoColor=black&labelColor=173B45)](https://github.com/valueromel)
