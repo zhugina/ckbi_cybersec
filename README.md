@@ -30,6 +30,7 @@
 - [CTF](https://overthewire.org/wargames/)
 - [тгк компетенции "Информационная безопасность"](https://t.me/cybersec_atom)
 - [Полное руководство по bash](https://tldp.org/LDP/abs/html/)
+- [Интерактивный тренажер по SQL](https://stepik.org/course/63054/promo)
 
 ## Contributors
 
